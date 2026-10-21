@@ -1,0 +1,69 @@
+/* Tipografía y layout básicos */
+:root {
+  --primario: #0d47a1;
+  --acento: #c62828;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+#cabecera {
+  border-bottom: 2px solid var(--primario);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  color: var(--primario);
+  margin-bottom: 0.25rem;
+}
+
+.slogan {
+  color: #607d8b;
+  margin: 0;
+}
+
+/* Componentes */
+.tarjeta {
+  background: #fff;
+  border: 1px solid #dfe3eb;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 14px 0;
+}
+
+.tarjeta.destacado {
+  background: #e8f0fe;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primario);
+  text-decoration: none;
+  color: var(--primario);
+  border-radius: 4px;
+}
+
+.item {
+  margin-bottom: 0.35rem;
+}
+
+.importante {
+  color: var(--acento);
+  font-weight: 700;
+}
+
+/* Ejemplo de especificidad */
+.tarjeta .importante {
+  text-decoration: underline;
+}
+
+#contenido .importante {
+  letter-spacing: 0.5px;
+}
